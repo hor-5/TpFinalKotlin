@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PokeFight</string>
+    <string name="comenzar">Comenzar</string>
+    <string name="elige_un_nickname">ELIGE UN NICKNAME!</string>
+    <string name="ingrese_un_apodo">Ingrese un apodo</string>
+    <string name="textview">Comenzar batalla</string>
+    <string name="todo">TODO</string>
+    <string name="bienvenido">¡Bienvenido!</string>
+    <string name="batallar">Batallar</string>
+    <string name="campo_de_batalla">Campo de batalla</string>
+    <string name="nickname">nickname</string>
+
+</resources>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdActivity">
+
+    <ImageView
+        android:id="@+id/imgEntrenadorMaquina"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toTopOf="@+id/txtNombreEntrenadorMaq"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitleCampoBatalla"
+        app:srcCompat="@drawable/user"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/txtLogs"
+        android:layout_width="129dp"
+        android:layout_height="312dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="21dp"
+        android:text="@string/textview"
+        app:layout_constraintEnd_toStartOf="@+id/imgEntrenadorMaquina"
+        app:layout_constraintStart_toEndOf="@+id/imgPokSelBatalla"
+        app:layout_constraintTop_toBottomOf="@+id/btnIniciarBatalla" />
+
+    <TextView
+        android:id="@+id/txtNombreEntrenadorMaq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="25dp"
+        android:text="@string/textview"
+        app:layout_constraintBottom_toTopOf="@+id/imgPokMaq"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtLogs"
+        app:layout_constraintTop_toBottomOf="@+id/imgEntrenadorMaquina" />
+
+    <ImageView
+        android:id="@+id/imgEntrenadorSelBatalla"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="14dp"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toTopOf="@+id/txtNombreEntrenadorSel"
+        app:layout_constraintEnd_toStartOf="@+id/txtLogs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitleCampoBatalla"
+        app:srcCompat="@drawable/user"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/txtTipoPokMaq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="94dp"
+        android:text="@string/textview"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtLogs"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombrePokMaq" />
+
+    <ImageView
+        android:id="@+id/imgPokMaq"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="1dp"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toTopOf="@+id/txtNombrePokMaq"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtLogs"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreEntrenadorMaq"
+        app:srcCompat="@drawable/user"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/txtNombrePokMaq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/textview"
+        app:layout_constraintBottom_toTopOf="@+id/txtTipoPokMaq"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtLogs"
+        app:layout_constraintTop_toBottomOf="@+id/imgPokMaq" />
+
+    <TextView
+        android:id="@+id/txtNombrePokSel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/textview"
+        app:layout_constraintBottom_toTopOf="@+id/txtTipoPokSel"
+        app:layout_constraintEnd_toStartOf="@+id/txtLogs"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgPokSelBatalla" />
+
+    <TextView
+        android:id="@+id/txtTipoPokSel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="83dp"
+        android:text="@string/textview"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtLogs"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombrePokSel" />
+
+    <TextView
+        android:id="@+id/txtNombreEntrenadorSel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="25dp"
+        android:text="@string/textview"
+        app:layout_constraintBottom_toTopOf="@+id/imgPokSelBatalla"
+        app:layout_constraintEnd_toStartOf="@+id/txtLogs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgEntrenadorSelBatalla" />
+
+    <ImageView
+        android:id="@+id/imgPokSelBatalla"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="5dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toTopOf="@+id/txtNombrePokSel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreEntrenadorSel"
+        app:srcCompat="@drawable/user"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imgAvatarBatalla"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toTopOf="@+id/divider3"
+        app:layout_constraintEnd_toStartOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck"
+        tools:srcCompat="@drawable/user" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="184dp"
+        android:text="@string/nickname"
+        app:layout_constraintBottom_toTopOf="@+id/txtUsuarioBatalla"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgAvatarBatalla"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtUsuarioBatalla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/textview"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/divider5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imgAvatarBatalla"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/txtTitleCampoBatalla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/campo_de_batalla"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnIniciarBatalla"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider5" />
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/txtTitleCampoBatalla"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgAvatarBatalla" />
+
+    <Button
+        android:id="@+id/btnIniciarBatalla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/btn_rounded"
+        android:padding="7dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:text="@string/batallar"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/txtLogs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitleCampoBatalla" />
+
+    <Button
+        android:id="@+id/btnPokedex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/btn_rounded"
+        android:padding="7dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:text="POKEDEX"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLogs" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
